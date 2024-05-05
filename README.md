@@ -15,7 +15,7 @@ My methodology involves predicting the taste similarity of food triplets based o
 
 ### Model Selection and Training:
 - I chose a pre-trained VGG16 model for feature extraction. VGG16 is a popular convolutional neural network architecture known for its effectiveness in image recognition tasks.
-- The selected model was loaded and transferred to the appropriate device (GPU if available).
+- The selected model was loaded and transferred to Kaggles GPU P100
 - A custom triplet margin loss function was defined to optimize the model for learning embeddings that capture taste similarity.
 - Training was performed using stochastic gradient descent (SGD) optimization with momentum and weight decay. The model was trained for a specified number of epochs.
 
